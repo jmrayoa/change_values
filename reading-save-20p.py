@@ -6,12 +6,12 @@
 ###              with values in their columns. It then generates a    ###
 ###              final file with one column from each file, where     ###
 ###              each column contains information about the vibration ###
-###              mode.                                                ###
+###              mode. Add in this, our new code change all values in ###                                              
+###              the columns of the files that are smaller than 0.2   ###                                                 
+###              and 0.6 to an negative value.                        ###                           
 ###                                                                   ###
 ###                                                                   ###
-###                                                                   ###
-###                                                                   ###
-### Format running: python3 reading-save-v2.py                        ###
+### Format running: python3 reading-save-20p.py                        ###
 ###                                                                   ###
 ###                                                                   ###
 ###                                                                   ###
@@ -19,8 +19,11 @@
 ###                     columns. The files are named Tper_i.csv, where###
 ###                     i represents the loop value. After reading,   ###
 ###                     the script organizes the columns into an      ###
-###                     established array and saves the information   ###
-###                     in the Tperc_final.csv  file.                 ###
+###                     established array, change all values in       ###
+###                     columns of the files that are smaller than 0.2###
+###                     and 0.6 to an negative value, and finally,    ###
+###                     saves the information in the Tperc_final_3.csv###
+###                     and the Tperc_final_4.csv  file.              ###
 ###                                                                   ###
 ###                                                                   ###
 #########################################################################
